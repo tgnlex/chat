@@ -1,0 +1,23 @@
+#send {
+  --pad: 0.25rem;
+  --bg: rgba(0, 0, 0, 0.15);
+  background: var(--bg);
+  padding: var(--pad);
+  position: fixed;
+
+  & #send--field {
+    --border: 1px solid transparent;
+    appearance: auto;
+    border: var(--border);
+    & :focus { outline: none; }
+  }
+  & #send--btn {
+    background: #333;
+    border: 1px solid transparent;
+    padding: 0 1rem;
+    margin: 0.25rem;
+    border-radius: 0.4rem;
+    outline: none;
+    color: #fff;
+  }
+}

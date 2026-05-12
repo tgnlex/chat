@@ -1,0 +1,8 @@
+:root {
+  --font-pop: Poppins;
+  --font-mono: Consolas;
+  --font-main: system-ui;
+  --font-sans: sans-serif;
+  --font-fallback: Helvetica;
+  --font-stack: var(--font-main) var(--font-fallback) var(--font-sans);
+}

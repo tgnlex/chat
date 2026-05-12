@@ -1,0 +1,10 @@
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  & li {
+    --pad: 0.5rem 1rem;
+    padding: var(--pad);
+  }
+  & li:nth-child(odd) { background #efefef; }
+}

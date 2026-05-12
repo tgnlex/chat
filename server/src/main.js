@@ -1,8 +1,8 @@
-import expreszs from 'express';
+import express from 'express';
 import HttpServer from './modules/http.js';
 
 const server = new HttpServer(express());
-
+server.app.use
 server.app.get('/', (req, res) => {
   res.send('<h1>wllo World./h1>')
 });

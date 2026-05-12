@@ -1,10 +1,12 @@
-import expreszs from 'express';
-import HttpServer from '../modules/http.js';
+import express from 'express';
+import HttpServer from './modules/http.js';
+import plugins from './config/plugins.js';
 
 const server = new HttpServer(express());
+plugins.forEach((plug) => server.app.use(plug));
 
 server.app.get('/', (req, res) => {
-  res.send('<h1>wllo World./h1>')
+  res.sendFile('src/views/index.html');
 });
 
 export default server;
